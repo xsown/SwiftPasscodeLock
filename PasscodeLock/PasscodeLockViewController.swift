@@ -8,11 +8,16 @@
 
 import UIKit
 
+extension Notification.Name {
+    static let passcodeViewControllerWillAppear = Notification.Name(rawValue: "passcodeViewControllerWillAppear")
+}
+
 open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegate {
     
     // added by X 20160525
-    open static let NotificationNamePasscodeViewControllerWillAppear = "PasscodeViewControllerWillAppear"
+    //    open static let NotificationNamePasscodeViewControllerWillAppear = "PasscodeViewControllerWillAppear"
     open static let NotificationNamePasscodePreferredStatusbarStyle = "PasscodeViewControllerPreferredStatusbarStyle"
+    
     // ~
     
     public enum LockState {
@@ -41,7 +46,7 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
     @IBOutlet open weak var placeholdersX: NSLayoutConstraint?
     
     open var successCallback: ((_ lock: PasscodeLockType) -> Void)?
-    open var dismissCompletionCallback: (()->Void)?
+    open var dismissCompletionCallback: (() -> Void)?
     open var notificationCenter: NotificationCenter?
     
     internal let passcodeConfiguration: PasscodeLockConfigurationType
@@ -100,8 +105,9 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // added by X 20160525
-        NotificationCenter.default.post(
-            name: Notification.Name(rawValue: type(of: self).NotificationNamePasscodeViewControllerWillAppear), object: self)
+        //        NotificationCenter.default.post(
+        //            name: Notification.Name(rawValue: type(of: self).NotificationNamePasscodeViewControllerWillAppear), object: self)
+        NotificationCenter.default.post(name: .passcodeViewControllerWillAppear, object: self)
         // ~
     }
     
@@ -109,18 +115,19 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         super.viewDidAppear(animated)
         
         if shouldTryToAuthenticateWithBiometrics {
-        
+            
             authenticateWithBiometrics()
         }
     }
     
     // added by X 20160526
-    open var statusBarStyle:UIStatusBarStyle = .default
-    open override var preferredStatusBarStyle : UIStatusBarStyle {
+    open var statusBarStyle: UIStatusBarStyle = .default
+    open override var preferredStatusBarStyle: UIStatusBarStyle {
         NotificationCenter.default.post(
             name: Notification.Name(rawValue: type(of: self).NotificationNamePasscodePreferredStatusbarStyle), object: self)
         return statusBarStyle
     }
+    
     // ~
     
     internal func updatePasscodeView() {
@@ -159,7 +166,9 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
     
     @IBAction func passcodeSignButtonTap(_ sender: PasscodeSignButton) {
         
-        guard isPlaceholdersAnimationCompleted else { return }
+        guard isPlaceholdersAnimationCompleted else {
+            return
+        }
         
         passcodeLock.addSign(sender.passcodeSign)
     }
@@ -188,12 +197,13 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
     }
     
     internal func dismissPasscodeLock(_ lock: PasscodeLockType) {
-    
-        if navigationController != nil {
         
+        if navigationController != nil {
+            
             navigationController?.popViewController(animated: true)
             
-        } else {
+        }
+        else {
             
             dismiss(animated: true, completion: nil)
         }
@@ -223,7 +233,7 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
                 
                 self.placeholdersX?.constant = 0
                 self.view.layoutIfNeeded()
-            },
+        },
             completion: { completed in
                 
                 self.isPlaceholdersAnimationCompleted = true
@@ -241,11 +251,13 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
     
     fileprivate func animatePlacehodlerAtIndex(_ index: Int, toState state: PasscodeSignPlaceholderView.State) {
         
-        guard index < placeholders.count && index >= 0 else { return }
+        guard index < placeholders.count && index >= 0 else {
+            return
+        }
         
         placeholders[index].animateState(state)
     }
-
+    
     // MARK: - PasscodeLockDelegate
     
     open func passcodeLockDidSucceed(_ lock: PasscodeLockType) {
@@ -284,3 +296,4 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         }
     }
 }
+
