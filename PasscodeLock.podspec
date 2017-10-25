@@ -12,10 +12,11 @@ s.ios.deployment_target = '8.0'
 s.source_files = 'PasscodeLock/*.{h,swift}',
 				 'PasscodeLock/*/*.{swift}'
 
-s.resources = [
-				'PasscodeLock/Views/PasscodeLockView.xib',
-				'PasscodeLock/en.lproj/*'
-			  ]
+# s.resources = [
+# 				'PasscodeLock/Views/PasscodeLockView.xib',
+# 				'PasscodeLock/en.lproj/*'
+# 			  ]
+s.resources = "PasscodeLock/PasscodeLock.bundle"
 
 s.requires_arc = true
 end

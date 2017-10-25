@@ -12,7 +12,7 @@ func localizedStringFor(_ key: String, comment: String) -> String {
     
     let name = "PasscodeLock"
     let bundle = bundleForResource(name, ofType: "strings")
-    
+
     return NSLocalizedString(key, tableName: name, bundle: bundle, comment: comment)
 }
 

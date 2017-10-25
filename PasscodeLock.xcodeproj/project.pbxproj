@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60FF1021FA01A090054496D /* PasscodeLock.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B60FF1011FA01A090054496D /* PasscodeLock.bundle */; };
 		C99EAF431B90B05700D61E1B /* PasscodeLock.h in Headers */ = {isa = PBXBuildFile; fileRef = C99EAF421B90B05700D61E1B /* PasscodeLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99EAF4A1B90B05800D61E1B /* PasscodeLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99EAF3F1B90B05700D61E1B /* PasscodeLock.framework */; };
 		C9D3DF0B1B919CE4008561EB /* PasscodeLockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D3DF0A1B919CE4008561EB /* PasscodeLockView.xib */; };
@@ -110,6 +111,7 @@
 		B60FF0FE1FA015AB0054496D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		B60FF0FF1FA015AB0054496D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B60FF1001FA015AB0054496D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/PasscodeLock.strings"; sourceTree = "<group>"; };
+		B60FF1011FA01A090054496D /* PasscodeLock.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PasscodeLock.bundle; sourceTree = "<group>"; };
 		C99EAF3F1B90B05700D61E1B /* PasscodeLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PasscodeLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99EAF421B90B05700D61E1B /* PasscodeLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasscodeLock.h; sourceTree = "<group>"; };
 		C99EAF441B90B05700D61E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				C9DC07FA1B90D0A3007A4DD0 /* PasscodeLock.strings */,
 				C9DC08151B90DF4E007A4DD0 /* PasscodeLockViewController.swift */,
 				C9D3DF471B91F099008561EB /* PasscodeLockPresenter.swift */,
+				B60FF1011FA01A090054496D /* PasscodeLock.bundle */,
 			);
 			path = PasscodeLock;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 			files = (
 				C9DC07FC1B90D0A3007A4DD0 /* PasscodeLock.strings in Resources */,
 				C9D3DF0B1B919CE4008561EB /* PasscodeLockView.xib in Resources */,
+				B60FF1021FA01A090054496D /* PasscodeLock.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
