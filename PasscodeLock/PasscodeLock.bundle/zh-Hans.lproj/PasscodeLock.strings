@@ -6,6 +6,11 @@
   Copyright (c) 2015 Yanko Dimitrov. All rights reserved.
 */
 
+/* Added by X 20171025 */
+"Cancel" = "取消";
+"Delete" = "删除";
+/* ~ */
+
 /* Enter Passcode State */
 "PasscodeLockEnterTitle" = "输入密码";
 "PasscodeLockEnterDescription" = "输入密码以继续";

@@ -6,6 +6,11 @@
   Copyright (c) 2015 Yanko Dimitrov. All rights reserved.
 */
 
+/* Added by X 20171025 */
+"Cancel" = "Cancel";
+"Delete" = "Delete";
+/* ~ */
+
 /* Enter Passcode State */
 "PasscodeLockEnterTitle" = "Enter Passcode";
 "PasscodeLockEnterDescription" = "Enter your passcode to proceed.";
