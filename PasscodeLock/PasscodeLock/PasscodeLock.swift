@@ -58,9 +58,14 @@ open class PasscodeLock: PasscodeLockType {
     }
     
     open func changeStateTo(_ state: PasscodeLockStateType) {
-        
-        lockState = state
-        delegate?.passcodeLockDidChangeState(self)
+        // Modified by X 20171025 to fix swift 4 'Simultaneous accesses' exception
+//        lockState = state
+//        delegate?.passcodeLockDidChangeState(self)
+        DispatchQueue.main.async {
+            self.lockState = state
+            self.delegate?.passcodeLockDidChangeState(self)
+        }
+        // ~
     }
     
     open func authenticateWithBiometrics() {
