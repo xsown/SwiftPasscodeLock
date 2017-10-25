@@ -8,23 +8,23 @@
 
 /* Enter Passcode State */
 "PasscodeLockEnterTitle" = "输入密码";
-"PasscodeLockEnterDescription" = "输入密码以继续。";
+"PasscodeLockEnterDescription" = "输入密码以继续";
 
 /* Set Passcode State */
 "PasscodeLockSetTitle" = "输入密码";
-"PasscodeLockSetDescription" = "选择你的密码。";
+"PasscodeLockSetDescription" = "选择你的密码";
 
 /* Confirm Passcode State */
 "PasscodeLockConfirmTitle" = "确认密码";
-"PasscodeLockConfirmDescription" = "再次输入密码。";
+"PasscodeLockConfirmDescription" = "再次输入密码";
 
 /* Change Passcode State */
 "PasscodeLockChangeTitle" = "输入旧密码";
-"PasscodeLockChangeDescription" = "输入旧密码。";
+"PasscodeLockChangeDescription" = "输入你的旧密码";
 
 /* Passcode Mismatch State */
 "PasscodeLockMismatchTitle" = "再试一次";
-"PasscodeLockMismatchDescription" = "密码不匹配。";
+"PasscodeLockMismatchDescription" = "密码不匹配";
 
 /* Touch ID Reason */
 "PasscodeLockTouchIDReason" = "需要验证身份";
