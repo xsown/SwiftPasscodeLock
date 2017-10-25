@@ -25,6 +25,9 @@ func bundleForResource(_ name: String, ofType type: String) -> Bundle {
     // Modified by X 20171025
 //    return Bundle(for: PasscodeLock.self)
     let bundle = Bundle(for: PasscodeLock.self)
+    if type == "nib" {
+        return bundle
+    }
     let url = bundle.url(forResource: "PasscodeLock", withExtension: "bundle")!
     return Bundle(url: url)!
     // ~
