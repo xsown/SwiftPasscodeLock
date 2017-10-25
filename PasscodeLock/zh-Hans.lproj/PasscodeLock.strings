@@ -1,0 +1,33 @@
+/* 
+  PasscodeLock.strings
+  PasscodeLock
+
+  Created by Yanko Dimitrov on 8/28/15.
+  Copyright (c) 2015 Yanko Dimitrov. All rights reserved.
+*/
+
+/* Enter Passcode State */
+"PasscodeLockEnterTitle" = "输入密码";
+"PasscodeLockEnterDescription" = "输入密码以继续。";
+
+/* Set Passcode State */
+"PasscodeLockSetTitle" = "输入密码";
+"PasscodeLockSetDescription" = "选择密码。";
+
+/* Confirm Passcode State */
+"PasscodeLockConfirmTitle" = "确认密码";
+"PasscodeLockConfirmDescription" = "再次输入密码。";
+
+/* Change Passcode State */
+"PasscodeLockChangeTitle" = "输入旧密码";
+"PasscodeLockChangeDescription" = "输入旧密码";
+
+/* Passcode Mismatch State */
+"PasscodeLockMismatchTitle" = "再试一次";
+"PasscodeLockMismatchDescription" = "密码不匹配。";
+
+/* Touch ID Reason */
+"PasscodeLockTouchIDReason" = "需要验证身份";
+
+/* Touch ID Fallback Button */
+"PasscodeLockTouchIDButton" = "输入密码";

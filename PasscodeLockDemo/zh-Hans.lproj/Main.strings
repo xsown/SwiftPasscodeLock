@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Test with Alert VC"; ObjectID = "0sQ-Ot-x0k"; */
+"0sQ-Ot-x0k.normalTitle" = "Test with Alert VC";
+
+/* Class = "UIButton"; normalTitle = "Test with Activity VC"; ObjectID = "FWy-5L-Ls0"; */
+"FWy-5L-Ls0.normalTitle" = "Test with Activity VC";
+
+/* Class = "UIButton"; normalTitle = "Change Passcode"; ObjectID = "hX3-sK-N1u"; */
+"hX3-sK-N1u.normalTitle" = "Change Passcode";
+
+/* Class = "UITextField"; placeholder = "Test with Keyboard"; ObjectID = "rmd-tl-sFf"; */
+"rmd-tl-sFf.placeholder" = "Test with Keyboard";
+
+/* Class = "UILabel"; text = "Passcode:"; ObjectID = "xNW-hY-03M"; */
+"xNW-hY-03M.text" = "Passcode:";
