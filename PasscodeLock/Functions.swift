@@ -22,5 +22,10 @@ func bundleForResource(_ name: String, ofType type: String) -> Bundle {
         return Bundle.main
     }
     
-    return Bundle(for: PasscodeLock.self)
+    // Modified by X 20171025
+//    return Bundle(for: PasscodeLock.self)
+    let bundle = Bundle(for: PasscodeLock.self)
+    let url = bundle.url(forResource: "PasscodeLock", withExtension: "bundle")!
+    return Bundle(url: url)!
+    // ~
 }
