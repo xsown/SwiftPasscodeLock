@@ -12,7 +12,7 @@
 
 /* Set Passcode State */
 "PasscodeLockSetTitle" = "输入密码";
-"PasscodeLockSetDescription" = "选择密码。";
+"PasscodeLockSetDescription" = "选择你的密码。";
 
 /* Confirm Passcode State */
 "PasscodeLockConfirmTitle" = "确认密码";
@@ -20,7 +20,7 @@
 
 /* Change Passcode State */
 "PasscodeLockChangeTitle" = "输入旧密码";
-"PasscodeLockChangeDescription" = "输入旧密码";
+"PasscodeLockChangeDescription" = "输入旧密码。";
 
 /* Passcode Mismatch State */
 "PasscodeLockMismatchTitle" = "再试一次";
