@@ -96,7 +96,7 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         // added by X 20160526
         cancelButton?.setTitle(localizedStringFor("Cancel", comment: ""), for: UIControlState())
         deleteSignButton?.setTitle(localizedStringFor("Delete", comment: ""), for: UIControlState())
-        
+        touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControlState())
         // ~
         
         setupEvents()
