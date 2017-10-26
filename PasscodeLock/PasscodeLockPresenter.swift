@@ -59,25 +59,37 @@ open class PasscodeLockPresenter {
         mainWindow?.windowLevel = 1
         mainWindow?.makeKeyAndVisible()
         
-        UIView.animate(
-            withDuration: 0.5,
-            delay: 0,
-            usingSpringWithDamping: 1,
-            initialSpringVelocity: 0,
-            options: UIViewAnimationOptions(),
-            animations: { [weak self] in
-                
-                self?.passcodeLockWindow.alpha = 0
-            },
-            completion: { [weak self] _ in
-                
-                self?.passcodeLockWindow.windowLevel = 0
-                self?.passcodeLockWindow.rootViewController = nil
-                self?.passcodeLockWindow.alpha = 1
-                // added by X 20160203
-                self?.passcodeLockWindow.isHidden = true
-                // ~
-            }
-        )
+        // Modified by X 20171026
+//        UIView.animate(
+//            withDuration: 0.5,
+//            delay: 0,
+//            usingSpringWithDamping: 1,
+//            initialSpringVelocity: 0,
+//            options: UIViewAnimationOptions(),
+//            animations: { [weak self] in
+//
+//                self?.passcodeLockWindow.alpha = 0
+//            },
+//            completion: { [weak self] _ in
+//
+//                self?.passcodeLockWindow.windowLevel = 0
+//                self?.passcodeLockWindow.rootViewController = nil
+//                self?.passcodeLockWindow.alpha = 1
+//                // added by X 20160203
+//                self?.passcodeLockWindow.isHidden = true
+//                // ~
+//            }
+//        )
+        UIView.animate(withDuration: 0.4, animations: {
+            self.passcodeLockWindow.alpha = 0
+        }) { (finished) in
+            self.passcodeLockWindow.windowLevel = 0
+            self.passcodeLockWindow.rootViewController = nil
+            self.passcodeLockWindow.alpha = 1
+            // added by X 20160203
+            self.passcodeLockWindow.isHidden = true
+            // ~
+        }
+        // ~
     }
 }
