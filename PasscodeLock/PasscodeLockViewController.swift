@@ -9,17 +9,17 @@
 import UIKit
 
 extension Notification.Name {
+    // added by X 20160525
     static let passcodeViewControllerWillAppear = Notification.Name(rawValue: "passcodeViewControllerWillAppear")
+    static let passcodePreferredStatusbarStyle = Notification.Name(rawValue: "PasscodeViewControllerPreferredStatusbarStyle")
+    // ~
+    // added by X 20171127
+    static let passcodePrefersStatusBarHidden = Notification.Name(rawValue: "PasscodeViewControllerPrefersStatusBarHidden")
+    // ~
 }
 
 open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegate {
-    
-    // added by X 20160525
-    //    open static let NotificationNamePasscodeViewControllerWillAppear = "PasscodeViewControllerWillAppear"
-    open static let NotificationNamePasscodePreferredStatusbarStyle = "PasscodeViewControllerPreferredStatusbarStyle"
-    
-    // ~
-    
+
     public enum LockState {
         case enterPasscode
         case setPasscode
@@ -126,13 +126,19 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
     // added by X 20160526
     open var statusBarStyle: UIStatusBarStyle = .default
     open override var preferredStatusBarStyle: UIStatusBarStyle {
-        NotificationCenter.default.post(
-            name: Notification.Name(rawValue: type(of: self).NotificationNamePasscodePreferredStatusbarStyle), object: self)
+        NotificationCenter.default.post(name: Notification.Name.passcodePreferredStatusbarStyle, object: self)
         return statusBarStyle
     }
-    
     // ~
     
+    // added by X 20171127
+    open var isStatusBarHidden: Bool = false
+    open override var prefersStatusBarHidden: Bool {
+        NotificationCenter.default.post(name: Notification.Name.passcodePrefersStatusBarHidden, object: self)
+        return isStatusBarHidden
+    }
+    // ~
+
     internal func updatePasscodeView() {
         
         titleLabel?.text = passcodeLock.state.title
