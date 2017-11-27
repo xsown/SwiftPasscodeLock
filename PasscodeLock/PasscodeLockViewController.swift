@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 extension Notification.Name {
     // added by X 20160525
@@ -99,7 +100,17 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         // added by X 20160526
         cancelButton?.setTitle(localizedStringFor("Cancel", comment: ""), for: UIControlState())
         deleteSignButton?.setTitle(localizedStringFor("Delete", comment: ""), for: UIControlState())
-        touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControlState())
+
+        if #available(iOS 11.0, *) {
+            switch LAContext().biometryType {
+            case .typeFaceID:
+                touchIDButton?.setTitle(localizedStringFor("UseFaceID", comment: ""), for: UIControlState())
+            default:
+                touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControlState())
+            }
+        } else {
+            touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControlState())
+        }
         // ~
         
         setupEvents()

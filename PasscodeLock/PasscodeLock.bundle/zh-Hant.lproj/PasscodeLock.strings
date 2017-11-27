@@ -9,7 +9,8 @@
 /* Added by X 20171025 */
 "Cancel" = "取消";
 "Delete" = "刪除";
-"UseTouchID" = "使用 Touch ID 或 面容 ID";
+"UseTouchID" = "使用 Touch ID";
+"UseFaceID" = "使用 面容 ID";
 /* ~ */
 
 /* Enter Passcode State */

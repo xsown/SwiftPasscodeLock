@@ -9,7 +9,8 @@
 /* Added by X 20171025 */
 "Cancel" = "Cancel";
 "Delete" = "Delete";
-"UseTouchID" = "Use Touch ID or Face ID";
+"UseTouchID" = "Use Touch ID";
+"UseFaceID" = "Use Face ID";
 /* ~ */
 
 /* Enter Passcode State */

@@ -101,4 +101,5 @@ open class PasscodeLock: PasscodeLockType {
         
         return context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
     }
+    
 }
