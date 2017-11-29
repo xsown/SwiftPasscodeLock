@@ -102,19 +102,37 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         deleteSignButton?.setTitle(localizedStringFor("Delete", comment: ""), for: UIControlState())
 
         if #available(iOS 11.0, *) {
-            switch LAContext().biometryType {
+            switch biometryType() {
             case .typeFaceID:
                 touchIDButton?.setTitle(localizedStringFor("UseFaceID", comment: ""), for: UIControlState())
             default:
                 touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControlState())
             }
-        } else {
+        }
+        else {
             touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControlState())
         }
         // ~
         
         setupEvents()
     }
+    
+    // added by X 20171129
+    @available(iOS 11.0, *)
+    fileprivate func biometryType() -> LABiometryType {
+        let context = LAContext()
+        var error: NSError? = nil
+        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            return context.biometryType
+        }
+        else {
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            return .none
+        }
+    }
+    // ~
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
