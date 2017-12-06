@@ -103,7 +103,7 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
 
         if #available(iOS 11.0, *) {
             switch biometryType() {
-            case .typeFaceID:
+            case .faceID:
                 touchIDButton?.setTitle(localizedStringFor("UseFaceID", comment: ""), for: UIControlState())
             default:
                 touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControlState())
@@ -129,7 +129,7 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
             if let error = error {
                 print(error.localizedDescription)
             }
-            return .none
+            return .LABiometryNone
         }
     }
     // ~
