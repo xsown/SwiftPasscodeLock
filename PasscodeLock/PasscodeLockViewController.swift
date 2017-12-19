@@ -11,9 +11,18 @@ import LocalAuthentication
 
 extension Notification.Name {
     // added by X 20160525
-    static let passcodeViewControllerWillAppear = Notification.Name(rawValue: "passcodeViewControllerWillAppear")
-    static let passcodePreferredStatusbarStyle = Notification.Name(rawValue: "PasscodeViewControllerPreferredStatusbarStyle")
+    static let passcodeViewControllerWillAppear =
+        Notification.Name(rawValue: "passcodeViewControllerWillAppear")
+    static let passcodeViewControllerDidAppear =
+        Notification.Name(rawValue: "passcodeViewControllerDidAppear")
+    static let passcodeViewControllerWillDisappear =
+        Notification.Name(rawValue: "passcodeViewControllerWillDisappear")
+    static let passcodeViewControllerDidDisappear =
+        Notification.Name(rawValue: "passcodeViewControllerDidDisappear")
+    static let passcodePreferredStatusbarStyle =
+        Notification.Name(rawValue: "PasscodeViewControllerPreferredStatusbarStyle")
     // ~
+    
     // added by X 20171127
     static let passcodePrefersStatusBarHidden = Notification.Name(rawValue: "PasscodeViewControllerPrefersStatusBarHidden")
     // ~
@@ -146,11 +155,26 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        // added by X 20171219
+        NotificationCenter.default.post(name: .passcodeViewControllerDidAppear, object: self)
+        // ~
+        
         if shouldTryToAuthenticateWithBiometrics {
-            
             authenticateWithBiometrics()
         }
     }
+    
+    // added by X 20171219
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.post(name: .passcodeViewControllerWillDisappear, object: self)
+    }
+    
+    open override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.post(name: .passcodeViewControllerDidDisappear, object: self)
+    }
+    // ~
     
     // added by X 20160526
     open var statusBarStyle: UIStatusBarStyle = .default
