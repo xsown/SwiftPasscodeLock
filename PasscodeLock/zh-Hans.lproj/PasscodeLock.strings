@@ -7,27 +7,27 @@
 */
 
 /* Enter Passcode State */
-"PasscodeLockEnterTitle" = "输入密码";
-"PasscodeLockEnterDescription" = "输入密码以继续。";
+"PasscodeLockEnterTitle" = "パスワードを入力";
+"PasscodeLockEnterDescription" = "続行するにはパスワードを入力してください。";
 
 /* Set Passcode State */
-"PasscodeLockSetTitle" = "输入密码";
-"PasscodeLockSetDescription" = "选择密码。";
+"PasscodeLockSetTitle" = "パスワードを入力してください";
+"PasscodeLockSetDescription" = "パスワードを選択してください。";
 
 /* Confirm Passcode State */
-"PasscodeLockConfirmTitle" = "确认密码";
-"PasscodeLockConfirmDescription" = "再次输入密码。";
+"PasscodeLockConfirmTitle" = "パスワードの確認";
+"PasscodeLockConfirmDescription" = "パスワードを再入力してください。";
 
 /* Change Passcode State */
-"PasscodeLockChangeTitle" = "输入旧密码";
-"PasscodeLockChangeDescription" = "输入旧密码";
+"PasscodeLockChangeTitle" = "古いパスワードを入力してください";
+"PasscodeLockChangeDescription" = "古いパスワードを入力してください";
 
 /* Passcode Mismatch State */
-"PasscodeLockMismatchTitle" = "再试一次";
-"PasscodeLockMismatchDescription" = "密码不匹配。";
+"PasscodeLockMismatchTitle" = "もう一度お試しください";
+"PasscodeLockMismatchDescription" = "パスワードが一致しません。";
 
 /* Touch ID Reason */
-"PasscodeLockTouchIDReason" = "需要验证身份";
+"PasscodeLockTouchIDReason" = "認証が必要です";
 
 /* Touch ID Fallback Button */
-"PasscodeLockTouchIDButton" = "输入密码";
+"PasscodeLockTouchIDButton" = "パスワードを入力してください";
