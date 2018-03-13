@@ -6,28 +6,36 @@
   Copyright (c) 2015 Yanko Dimitrov. All rights reserved.
 */
 
+/* Added by X 20171025 */
+"Cancel" = "取消";
+"Delete" = "删除";
+"UseTouchID" = "使用 触控 ID";
+"UseFaceID" = "使用 面容 ID";
+/* ~ */
+
 /* Enter Passcode State */
-"PasscodeLockEnterTitle" = "パスワードを入力";
-"PasscodeLockEnterDescription" = "続行するにはパスワードを入力してください。";
+"PasscodeLockEnterTitle" = "输入密码";
+"PasscodeLockEnterDescription" = "输入密码以继续";
 
 /* Set Passcode State */
-"PasscodeLockSetTitle" = "パスワードを入力してください";
-"PasscodeLockSetDescription" = "パスワードを選択してください。";
+"PasscodeLockSetTitle" = "输入密码";
+"PasscodeLockSetDescription" = "选择你的密码";
 
 /* Confirm Passcode State */
-"PasscodeLockConfirmTitle" = "パスワードの確認";
-"PasscodeLockConfirmDescription" = "パスワードを再入力してください。";
+"PasscodeLockConfirmTitle" = "确认密码";
+"PasscodeLockConfirmDescription" = "再次输入密码";
 
 /* Change Passcode State */
-"PasscodeLockChangeTitle" = "古いパスワードを入力してください";
-"PasscodeLockChangeDescription" = "古いパスワードを入力してください";
+"PasscodeLockChangeTitle" = "输入旧密码";
+"PasscodeLockChangeDescription" = "输入你的旧密码";
 
 /* Passcode Mismatch State */
-"PasscodeLockMismatchTitle" = "もう一度お試しください";
-"PasscodeLockMismatchDescription" = "パスワードが一致しません。";
+"PasscodeLockMismatchTitle" = "再试一次";
+"PasscodeLockMismatchDescription" = "密码不匹配";
 
 /* Touch ID Reason */
-"PasscodeLockTouchIDReason" = "認証が必要です";
+"PasscodeLockTouchIDReason" = "需要验证身份";
 
 /* Touch ID Fallback Button */
-"PasscodeLockTouchIDButton" = "パスワードを入力してください";
+"PasscodeLockTouchIDButton" = "输入密码";
+

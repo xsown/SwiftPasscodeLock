@@ -6,28 +6,36 @@
   Copyright (c) 2015 Yanko Dimitrov. All rights reserved.
 */
 
+/* Added by X 20171025 */
+"Cancel" = "キャンセル";
+"Delete" = "削除";
+"UseTouchID" = "Touch IDを使用する";
+"UseFaceID" = "Touch IDを使用する";
+/* ~ */
+
 /* Enter Passcode State */
-"PasscodeLockEnterTitle" = "Enter Passcode";
-"PasscodeLockEnterDescription" = "Enter your passcode to proceed.";
+"PasscodeLockEnterTitle" = "パスワードを入力";
+"PasscodeLockEnterDescription" = "続行するにはパスワードを入力してください。";
 
 /* Set Passcode State */
-"PasscodeLockSetTitle" = "Enter a Passcode";
-"PasscodeLockSetDescription" = "Choose your passcode.";
+"PasscodeLockSetTitle" = "パスワードを入力してください";
+"PasscodeLockSetDescription" = "パスワードを選択してください。";
 
 /* Confirm Passcode State */
-"PasscodeLockConfirmTitle" = "Confirm Passcode";
-"PasscodeLockConfirmDescription" = "Enter the passcode again.";
+"PasscodeLockConfirmTitle" = "パスワードの確認";
+"PasscodeLockConfirmDescription" = "パスワードを再入力してください。";
 
 /* Change Passcode State */
-"PasscodeLockChangeTitle" = "Enter Old Passcode";
-"PasscodeLockChangeDescription" = "Enter your old passcode.";
+"PasscodeLockChangeTitle" = "古いパスワードを入力してください";
+"PasscodeLockChangeDescription" = "古いパスワードを入力してください";
 
 /* Passcode Mismatch State */
-"PasscodeLockMismatchTitle" = "Try again";
-"PasscodeLockMismatchDescription" = "Passcodes didn\'t match.";
+"PasscodeLockMismatchTitle" = "もう一度お試しください";
+"PasscodeLockMismatchDescription" = "パスワードが一致しません。";
 
 /* Touch ID Reason */
-"PasscodeLockTouchIDReason" = "Authentication required to proceed";
+"PasscodeLockTouchIDReason" = "認証が必要です";
 
 /* Touch ID Fallback Button */
-"PasscodeLockTouchIDButton" = "Enter Passcode";
+"PasscodeLockTouchIDButton" = "パスワードを入力してください";
+

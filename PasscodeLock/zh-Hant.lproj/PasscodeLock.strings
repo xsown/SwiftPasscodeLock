@@ -6,6 +6,13 @@
  Copyright (c) 2015 Yanko Dimitrov. All rights reserved.
  */
 
+/* Added by X 20171025 */
+"Cancel" = "取消";
+"Delete" = "刪除";
+"UseTouchID" = "使用 Touch ID";
+"UseFaceID" = "使用 Face ID";
+/* ~ */
+
 /* Enter Passcode State */
 "PasscodeLockEnterTitle" = "鍵入密碼";
 "PasscodeLockEnterDescription" = "鍵入密碼以繼續。";
