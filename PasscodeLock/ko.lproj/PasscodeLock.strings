@@ -1,0 +1,40 @@
+/* 
+  PasscodeLock.strings
+  PasscodeLock
+
+  Created by Yanko Dimitrov on 8/28/15.
+  Copyright (c) 2015 Yanko Dimitrov. All rights reserved.
+*/
+
+/* Added by X 20183020 */
+"Cancel" = "취소하다";
+"Delete" = "지우다";
+"UseTouchID" = "Touch ID 사용";
+"UseFaceID" = "Face ID 사용";
+/* ~ */
+
+/* Enter Passcode State */
+"PasscodeLockEnterTitle" = "암호 입력";
+"PasscodeLockEnterDescription" = "계속하려면 암호를 입력하십시오.";
+
+/* Set Passcode State */
+"PasscodeLockSetTitle" = "패스 코드를 입력하십시오";
+"PasscodeLockSetDescription" = "암호를 선택하십시오.";
+
+/* Confirm Passcode State */
+"PasscodeLockConfirmTitle" = "암호 확인";
+"PasscodeLockConfirmDescription" = "암호를 다시 입력하십시오.";
+
+/* Change Passcode State */
+"PasscodeLockChangeTitle" = "이전 패스 코드 입력";
+"PasscodeLockChangeDescription" = "이전 패스 코드를 입력하십시오.";
+
+/* Passcode Mismatch State */
+"PasscodeLockMismatchTitle" = "다시 시도하십시오.";
+"PasscodeLockMismatchDescription" = "패스 코드가 일치하지 않습니다.";
+
+/* Touch ID Reason */
+"PasscodeLockTouchIDReason" = "계속하려면 인증이 필요합니다.";
+
+/* Touch ID Fallback Button */
+"PasscodeLockTouchIDButton" = "암호 입력";
