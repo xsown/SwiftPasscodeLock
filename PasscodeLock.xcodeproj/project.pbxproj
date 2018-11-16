@@ -127,6 +127,12 @@
 		B668C2B02070E125003DA2B6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		B668C2B12070E125003DA2B6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		B668C2B22070E125003DA2B6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/PasscodeLock.strings; sourceTree = "<group>"; };
+		B6AD7F6B219EA6AB0003C150 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		B6AD7F6C219EA6AC0003C150 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B6AD7F6D219EA6AC0003C150 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/PasscodeLock.strings"; sourceTree = "<group>"; };
+		B6AD7F6E219EA6B30003C150 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
+		B6AD7F6F219EA6B30003C150 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B6AD7F70219EA6B30003C150 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/PasscodeLock.strings"; sourceTree = "<group>"; };
 		C99EAF3F1B90B05700D61E1B /* PasscodeLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PasscodeLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99EAF421B90B05700D61E1B /* PasscodeLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasscodeLock.h; sourceTree = "<group>"; };
 		C99EAF441B90B05700D61E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -508,6 +514,8 @@
 				fr,
 				de,
 				es,
+				"pt-BR",
+				"pt-PT",
 			);
 			mainGroup = C99EAF351B90B05700D61E1B;
 			productRefGroup = C99EAF401B90B05700D61E1B /* Products */;
@@ -679,6 +687,8 @@
 				B668C2AD2070E120003DA2B6 /* fr */,
 				B668C2B02070E125003DA2B6 /* de */,
 				B631883C219E70A6006A9A51 /* es */,
+				B6AD7F6B219EA6AB0003C150 /* pt-BR */,
+				B6AD7F6E219EA6B30003C150 /* pt-PT */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -694,6 +704,8 @@
 				B668C2AE2070E120003DA2B6 /* fr */,
 				B668C2B12070E125003DA2B6 /* de */,
 				B631883D219E70A6006A9A51 /* es */,
+				B6AD7F6C219EA6AC0003C150 /* pt-BR */,
+				B6AD7F6F219EA6B30003C150 /* pt-PT */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -709,6 +721,8 @@
 				B668C2AF2070E120003DA2B6 /* fr */,
 				B668C2B22070E125003DA2B6 /* de */,
 				B631883E219E70A6006A9A51 /* es */,
+				B6AD7F6D219EA6AC0003C150 /* pt-BR */,
+				B6AD7F70219EA6B30003C150 /* pt-PT */,
 			);
 			name = PasscodeLock.strings;
 			sourceTree = "<group>";
