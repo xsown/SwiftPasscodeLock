@@ -112,6 +112,9 @@
 		B60FF0FF1FA015AB0054496D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B60FF1001FA015AB0054496D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/PasscodeLock.strings"; sourceTree = "<group>"; };
 		B60FF1011FA01A090054496D /* PasscodeLock.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PasscodeLock.bundle; sourceTree = "<group>"; };
+		B631883C219E70A6006A9A51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		B631883D219E70A6006A9A51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B631883E219E70A6006A9A51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/PasscodeLock.strings; sourceTree = "<group>"; };
 		B63709D82058143200B67F78 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		B63709D92058143200B67F78 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		B63709DA2058143300B67F78 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/PasscodeLock.strings; sourceTree = "<group>"; };
@@ -504,6 +507,7 @@
 				ko,
 				fr,
 				de,
+				es,
 			);
 			mainGroup = C99EAF351B90B05700D61E1B;
 			productRefGroup = C99EAF401B90B05700D61E1B /* Products */;
@@ -674,6 +678,7 @@
 				B63A82C2206151F40042662A /* ko */,
 				B668C2AD2070E120003DA2B6 /* fr */,
 				B668C2B02070E125003DA2B6 /* de */,
+				B631883C219E70A6006A9A51 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -688,6 +693,7 @@
 				B63A82C3206151F40042662A /* ko */,
 				B668C2AE2070E120003DA2B6 /* fr */,
 				B668C2B12070E125003DA2B6 /* de */,
+				B631883D219E70A6006A9A51 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -702,6 +708,7 @@
 				B63A82C4206151F40042662A /* ko */,
 				B668C2AF2070E120003DA2B6 /* fr */,
 				B668C2B22070E125003DA2B6 /* de */,
+				B631883E219E70A6006A9A51 /* es */,
 			);
 			name = PasscodeLock.strings;
 			sourceTree = "<group>";
