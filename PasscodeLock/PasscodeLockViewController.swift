@@ -142,6 +142,17 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         }
     }
     // ~
+  
+  // added by X 20181120
+  override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    switch UIDevice.current.userInterfaceIdiom {
+    case .pad:
+      return .all
+    default:
+      return .portrait
+    }
+  }
+  // ~
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

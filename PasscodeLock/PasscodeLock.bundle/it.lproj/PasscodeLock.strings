@@ -1,0 +1,40 @@
+/* 
+  PasscodeLock.strings
+  PasscodeLock
+
+  Created by Yanko Dimitrov on 8/28/15.
+  Copyright (c) 2015 Yanko Dimitrov. All rights reserved.
+*/
+
+/* Added by X 20171025 */
+"Cancel" = "Annulla";
+"Delete" = "Elimina";
+"UseTouchID" = "Usa Touch ID";
+"UseFaceID" = "Usa Face ID";
+/* ~ */
+
+/* Enter Passcode State */
+"PasscodeLockEnterTitle" = "Inserisci codice di accesso";
+"PasscodeLockEnterDescription" = "Inserisci il tuo codice di accesso per procedere.";
+
+/* Set Passcode State */
+"PasscodeLockSetTitle" = "Immettere un codice di accesso";
+"PasscodeLockSetDescription" = "Scegli il tuo codice.";
+
+/* Confirm Passcode State */
+"PasscodeLockConfirmTitle" = "Conferma codice di accesso";
+"PasscodeLockConfirmDescription" = "Immettere nuovamente il codice di accesso.";
+
+/* Change Passcode State */
+"PasscodeLockChangeTitle" = "Inserisci vecchio codice di accesso";
+"PasscodeLockChangeDescription" = "Inserisci il tuo vecchio codice.";
+
+/* Passcode Mismatch State */
+"PasscodeLockMismatchTitle" = "Riprova";
+"PasscodeLockMismatchDescription" = "I codici non corrispondono.";
+
+/* Touch ID Reason */
+"PasscodeLockTouchIDReason" = "L'autenticazione è necessaria per procedere";
+
+/* Touch ID Fallback Button */
+"PasscodeLockTouchIDButton" = "Inserisci codice di accesso";
