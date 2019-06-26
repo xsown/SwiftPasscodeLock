@@ -16,7 +16,7 @@ open class PasscodeLockPresenter {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         
-        window.windowLevel = 0
+        window.windowLevel = UIWindow.Level(rawValue: 0)
         window.makeKeyAndVisible()
         
         return window
@@ -28,7 +28,7 @@ open class PasscodeLockPresenter {
     public init(mainWindow window: UIWindow?, configuration: PasscodeLockConfigurationType) {
         
         mainWindow = window
-        mainWindow?.windowLevel = 1
+        mainWindow?.windowLevel = UIWindow.Level(rawValue: 1)
         passcodeConfiguration = configuration
     }
     
@@ -38,7 +38,7 @@ open class PasscodeLockPresenter {
         guard !isPasscodePresented else { return }
         
         isPasscodePresented = true
-        passcodeLockWindow.windowLevel = 2
+        passcodeLockWindow.windowLevel = UIWindow.Level(rawValue: 2)
         // added by X 20160203
         passcodeLockWindow.isHidden = false
         // ~
@@ -56,7 +56,7 @@ open class PasscodeLockPresenter {
     fileprivate func dismissPasscodeLock() {
         
         isPasscodePresented = false
-        mainWindow?.windowLevel = 1
+        mainWindow?.windowLevel = UIWindow.Level(rawValue: 1)
         mainWindow?.makeKeyAndVisible()
         
         // Modified by X 20171026
@@ -83,7 +83,7 @@ open class PasscodeLockPresenter {
         UIView.animate(withDuration: 0.4, animations: {
             self.passcodeLockWindow.alpha = 0
         }) { (finished) in
-            self.passcodeLockWindow.windowLevel = 0
+            self.passcodeLockWindow.windowLevel = UIWindow.Level(rawValue: 0)
             self.passcodeLockWindow.rootViewController = nil
             self.passcodeLockWindow.alpha = 1
             // added by X 20160203

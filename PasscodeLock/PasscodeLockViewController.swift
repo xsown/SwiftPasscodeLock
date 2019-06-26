@@ -107,19 +107,19 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         deleteSignButton?.isEnabled = false
         
         // added by X 20160526
-        cancelButton?.setTitle(localizedStringFor("Cancel", comment: ""), for: UIControlState())
-        deleteSignButton?.setTitle(localizedStringFor("Delete", comment: ""), for: UIControlState())
+        cancelButton?.setTitle(localizedStringFor("Cancel", comment: ""), for: UIControl.State())
+        deleteSignButton?.setTitle(localizedStringFor("Delete", comment: ""), for: UIControl.State())
 
         if #available(iOS 11.0, *) {
             switch biometryType() {
             case .faceID:
-                touchIDButton?.setTitle(localizedStringFor("UseFaceID", comment: ""), for: UIControlState())
+                touchIDButton?.setTitle(localizedStringFor("UseFaceID", comment: ""), for: UIControl.State())
             default:
-                touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControlState())
+                touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControl.State())
             }
         }
         else {
-            touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControlState())
+            touchIDButton?.setTitle(localizedStringFor("UseTouchID", comment: ""), for: UIControl.State())
         }
         // ~
         
@@ -215,14 +215,14 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
     
     fileprivate func setupEvents() {
         
-        notificationCenter?.addObserver(self, selector: #selector(PasscodeLockViewController.appWillEnterForegroundHandler(_:)), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
-        notificationCenter?.addObserver(self, selector: #selector(PasscodeLockViewController.appDidEnterBackgroundHandler(_:)), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        notificationCenter?.addObserver(self, selector: #selector(PasscodeLockViewController.appWillEnterForegroundHandler(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
+        notificationCenter?.addObserver(self, selector: #selector(PasscodeLockViewController.appDidEnterBackgroundHandler(_:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
     }
     
     fileprivate func clearEvents() {
         
-        notificationCenter?.removeObserver(self, name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
-        notificationCenter?.removeObserver(self, name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        notificationCenter?.removeObserver(self, name: UIApplication.willEnterForegroundNotification, object: nil)
+        notificationCenter?.removeObserver(self, name: UIApplication.didEnterBackgroundNotification, object: nil)
     }
     
     @objc open func appWillEnterForegroundHandler(_ notification: Notification) {
